@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,sans-serif;
+    line-height: 1.6;
+}
+.barmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.barmenu .logo img{
+    height: 50px;
+}
+.lien-menu{
+    display: flex;
+    list-style: none;
+}
+
+.lien-menu li {
+    margin: 0 10px;
+}
+
+.lien-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+/* application de la couleur lors du survole du curseur sur les menus*/
+.lien-menu a:hover {
+    color: #00d9a3;
+}
+/* Modification des textes et insertion de l'image de fond de section accueil*/
+.container{
+    height: 100vh;
+    background:url('/image/salon.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*color: white;*/
+    padding: 20px;
+}
+
+.txt h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.txt h1 span{
+    color: #00d9a3;
+}
+
+.txt h1 p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.bouton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #89FFFD;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.bouton :hover {
+    background-color:transparent ;
+    color: #00b38c;
+}
