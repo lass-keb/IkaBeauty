@@ -1,3 +1,4 @@
+/*
 *{
     margin: 0;
     padding: 0;
@@ -35,11 +36,11 @@ body{
     font-weight: bold;
     transition: color 0.3s ease;
 }
-/* application de la couleur lors du survole du curseur sur les menus*/
+/* application de la couleur lors du survole du curseur sur les menus
 .lien-menu a:hover {
     color: #00d9a3;
 }
-/* Modification des textes et insertion de l'image de fond de section accueil*/
+/* Modification des textes et insertion de l'image de fond de section accueil
 .container{
     height: 100vh;
     background:url('/image/salon.jpg') no-repeat center center/cover;
@@ -47,7 +48,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    /*color: white;*/
+    /*color: white;
     padding: 20px;
 }
 
@@ -80,3 +81,5 @@ body{
     background-color:transparent ;
     color: #00b38c;
 }
+
+*/
