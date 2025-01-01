@@ -15,20 +15,20 @@
         <nav>
             <ul class="lien-menu">
                 
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">A Propos</a></li>
-                <li><a href="#">Nos Services</a></li>
-                <li><a href="#">Nos Produits</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#about">A Propos</a></li>
+                <li><a href="#service">Nos Services</a></li>
+                <li><a href="#produit">Nos Produits</a></li>
+                <li><a href="#contact">Contact</a></li>
     </ul>
     </nav>
     </header>
     <!--Création de la page accueil-->
     <div class="container">
         <div class="txt">
-    <h1>Bienvenue dans la maison de la beauté IkaBeauty</h1>
+    <h1 id="accueil">Bienvenue dans la maison de la beauté IkaBeauty</h1>
     <p>Offrez-vous un moment de détente et de beauté</p>
-    <a href="#" class="bouton">Découvrez plus</a>
+    <a href="#service" class="bouton">Découvrez plus</a>
         </div>
      <!-- <div class="img">
             <img src="image/salon.jpg" alt="image du salon">
@@ -38,7 +38,7 @@
     <!--Création de la partie A propos-->
     <div class="container2">
         <div class="contenu">
-            <h1>A propos de Nous</h1>
+            <h1 id="about">A propos de Nous</h1>
             <p>Votre beauté, notre passion depuis 2018
                 un lieu dédié à la beauté, au bien-être et à la confiance en soi. Situé au cœur de Bamako ACI 2000, 
                 notre salon est conçu pour offrir une expérience unique, où chaque détail est pensé pour votre confort et votre satisfaction.</p>
@@ -57,7 +57,7 @@
     </div>
 
     <!--Création de la section nos service-->
-    <h2>Nos Services</h2>
+    <h2 id="service">Nos Services</h2>
     <p>Laissez nos maquilleurs révéler votre éclat naturel avec un maquillage parfaitement 
         adapté à votre style et à vos événements. Qu’il s’agisse d’un mariage, d’une fête ou d’un shooting, vous serez éblouissante.</p>
         <!--ajout des éléments du services images et descriptions-->
@@ -93,16 +93,83 @@
         </div>
     </div>
     <!--Création de la section nos produits-->
-    <h2>Nos Produits</h2>
-    <p>Au sein de  IkaBeauty nous utilisons et proposons une sélection de produits haut de gamme, choisis avec soin pour leur efficacité et leur respect de votre peau et de vos cheveux. Découvrez nos marques partenaires et offrez-vous le meilleur pour prolonger l’expérience beauté à la maison.</p>
+    <section class="produits">
+    <h2 id="produit">Nos Produits</h2>
+    <p class="desciption">Au sein de  IkaBeauty nous utilisons et proposons une sélection de produits haut de gamme, choisis avec soin pour leur efficacité et leur respect de votre peau et de vos cheveux. Découvrez nos marques partenaires et offrez-vous le meilleur pour prolonger l’expérience beauté à la maison.</p>
       <!--ajout des éléments du services images et descriptions-->
-      <div id="srv">
-        <div class="service--">
-            
+      <div id="diff-prod">
+        <div class="elmt">
+            <img src="image/rouge.jpg" alt="Rouge à lèvres">
+            <h3>Rouge à lèvres</h3>
+            <p>Rouge-lèvre Note apportez une touche glamour à vos lèvres</p>
         </div>
+        <div class="elmt">
+            <img src="image/vernis.jpg" alt="Vernis OPI">
+            <h3>Vernis Note</h3>
+            <p>O.P.I Chouchoutez vos mains</p>
+        </div>
+        <div class="elmt">
+            <img src="image/aloe-vera-pour-le-visage.jpg" alt="Crème Aloe-vera">
+            <h3>Aloe Vera</h3>
+            <p>crème Aloe vera sublimez votre teint</p>
+        </div>
+        <div class="elmt">
+            <img src="image/shampoo2.jpg" alt="Shampoing">
+            <h3>Shampoing</h3>
+            <p>Shampoing Aloevera Transformez vos cheveux avec nos shampoings</p>
+        </div>
+        <div class="elmt">
+            <img src="image/huilemassage.jpg" alt="Huile pour massage">
+            <h3>Mary’s</h3>
+            <p>Huile Mary’s pour un massage douce</p>
+        </div>
+        <div class="elmt">
+            <img src="image/hudabeauty.jpeg" alt="Maquillage Huda">
+            <h3>Maquillage Huda</h3>
+            <p>Huda Beauty Illuminez votre regard</p>
+        </div>       
      </div>
+    </section>
+    <!--Creation de la section contact-->
+    <section class="contact"> <!--Cette div permet de styliser la section entière-->
+        <h2 id="contact">Contact</h2>
+        <div class="contenus"> <!--Cette div permet de styliser les infos-->
+            <div class="infos"> <!--Cette div permet de styliser le paragraphe ci dessous-->
+                <p>Vous avez une question, souhaitez en savoir plus sur nos services ou prendre rendez-vous ? Notre équipe est à votre disposition pour vous répondre rapidement. Contactez-nous via l’un des moyens ci-dessous ou passez directement au salon. Nous serons ravis de vous accueillir !</p>
+                <!--création des horaires du salon-->
+                <p class="horaire"><strong>"Restons en contact !"</strong><br>
+                    <u>Nos horaires :</u><br>
+                    Lundi - Mercredi : 9h00 - 18h00 <br>
+                    Jeudi : 4h00 - 15h00 <br>
+                    Vendredi : 13h00 - 20h00 <br>
+                    Samedi : 10h00 - 18h00 <br>
+                    Dimanche : 4h00 - 15h00 </p>
+                <p class="number"><strong>Ou contactez au :</strong><br>
+                    <span style="color: red;">+223 92 94 50 62 / 68 66 66 55</span>
+                </p>
+            </div>
+        </div>
+        <!--Creation du formulaire-->
+        <form action="" class="formulaire">
+            <fieldset>
+                <legend>Formulaire</legend>
+                <label for="n">Nom :</label>
+                <input type="text" id="n" placeholder="Ecrivez votre nom">
+                <label for="p">Prénom :</label> 
+                <input type="text" id="p" placeholder="Ecrivez votre prénom"> <br> <br>
+                <label for="tel">Téléphone :</label>
+                <input type="tel" id="tel" placeholder="Ecrivez votre numéro de téléphone"><br> <br>
+                <label for="email">Email :</label>
+                <input type="text" id="email" placeholder="Fournissez votre email"> <br> <br>
+                <label for="pw">Mot de passe :</label>
+                <input type="password" id="pw"> <br> <br>
+                <label for="cp">Confirmez le mot de passe:</label> 
+                <input type="password" id="cp"> <br> <br>
+                <button type="submit">Envoyer</button>
 
-
+            </fieldset>
+        </form>
+    </section>
 
 </body>
 </html>
